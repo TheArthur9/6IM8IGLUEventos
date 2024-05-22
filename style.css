@@ -32,7 +32,6 @@ header .menu{
     gap: 20px;
     font-weight: 500;
 }
-/* css slider */
 .slider{
     height: 100vh;
     margin-top: -50px;
@@ -181,15 +180,15 @@ button {
   text-transform: uppercase;
   cursor: pointer;
   transform: skew(-21deg);
-  position: relative; /* Añadir posición relativa */
-  overflow: hidden; /* Para asegurar que la animación no se salga del botón */
-  color: #000; /* Color del texto del botón */
+  position: relative;
+  overflow: hidden; 
+  color: #000; 
 }
 
 span {
   display: inline-block;
   transform: skew(21deg);
-  transition: all 0.5s; /* Añadir transición para suavizar el cambio */
+  transition: all 0.5s; 
 }
 
 button::before {
@@ -216,9 +215,15 @@ button:hover::before {
 }
 
 button:hover span {
-  animation: showContent 0.5s ease-in-out forwards; /* Aplicar la animación al hacer hover */
-  transform: translateY(30px); /* Posición inicial fuera de vista */
-  filter: blur(20px); /* Aplicar el blur inicial */
-  opacity: 0; /* Iniciar la animación con opacidad 0 */
-  animation: showContent .5s ease-in-out forwards; /* Aplicar la animación */
+  animation: showContent 0.5s ease-in-out forwards; 
+  transform: translateY(30px); 
+  filter: blur(20px); 
+  opacity: 0;
+  animation: showContent .5s ease-in-out forwards; 
+}
+a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+
 }
