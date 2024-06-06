@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activación de Código QR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Activación de Código QR</h1>
+        <div class="content">
+            <form action="../Validacionboleto/ValidacionBoleto.html">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" value="Juan Pérez" required>
+                </div>
+                <div class="form-group">
+                    <label for="evento">Nombre del Evento</label>
+                    <input type="text" id="evento" name="evento" value="Concierto de Rock" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha del Evento</label>
+                    <input type="date" id="fecha" name="fecha" value="2024-06-15" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="email" id="correo" name="correo" value="juan@example.com" required>
+                </div>
+                <div class="form-group">
+                   <button type="submit">Activar Código</button>
+                </div>
+            </form>
+            <div class="qr-section">
+                <div class="qr-container">
+                    <div class="qr-code">
+                        <img src="qr.png" alt="Código QR">
+                    </div>
+                    <div class="qr-warning">
+                        El código será activado para validez horas antes del evento.<br>
+                        Mientras usted esté cerca del lugar del evento será válido hasta tal fecha.
+               
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
